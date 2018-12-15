@@ -160,6 +160,7 @@ a:active{
 
 a.active{
 	color: var(--prim_color, blue);
+	font-weight: 700;
 }
 
 a.italic{
