@@ -9,7 +9,7 @@ function replaceLogo() {
       ux.innerHTML = uxAbr;
     }
     else{
-      logoImg = '<a href="#" class="logo">Sanghyun Lee</a>';
+      logoImg = '<a href="index.html" class="logo">Sanghyun Lee</a>';
       uxAbr = 'User Experience';
       logo.innerHTML = logoImg;
       ux.innerHTML = uxAbr;
