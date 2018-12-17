@@ -389,7 +389,7 @@ nav .logo-container {
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 1;
+	z-index: 998;
 	background: var(--background_color);
 	transition-duration: 5s;
 	opacity: 0.9;
