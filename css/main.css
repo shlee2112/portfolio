@@ -139,7 +139,7 @@ li{
 	font-family: var(--prim_font_fam);
 	font-weight: 300;
 	font-size: 1rem;
-	line-height: 2em;
+	line-height: 1.5em;
 	font-style: normal;
 }
 
@@ -276,6 +276,7 @@ nav li.list {
 nav li {
   list-style: none;
 	font-weight: 500;
+	line-height: 3em;
   /* padding: .8em; */
 }
 
