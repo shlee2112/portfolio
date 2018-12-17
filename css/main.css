@@ -134,11 +134,12 @@ p{
 	margin: 1em 0 1em 0;
 }
 
+
 li{
 	font-family: var(--prim_font_fam);
 	font-weight: 300;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.5em;
 	font-style: normal;
 }
 

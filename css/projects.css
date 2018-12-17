@@ -97,3 +97,7 @@ figure.title_image > img{
 figure.final_img{
 	margin: 2em 0;
 }
+
+figure > figcaption{
+	margin: .75em 0 2em 0;
+}
