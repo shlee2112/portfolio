@@ -53,7 +53,7 @@
   }
 
   nav{
-    padding: 1em 0;
+    padding: 1em 0 !important;
     /* margin: 0 1.8em; */
   }
 

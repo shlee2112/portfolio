@@ -247,13 +247,18 @@ nav {
   display: block;
   position: relative;
 	margin: 0 auto;
-	padding: 2em 0;
 	z-index: 99;
 }
 
 #navbar {
   overflow: hidden;
   background-color: var(--background_color);
+	padding: 2em 0;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+
 }
 
 
@@ -277,7 +282,6 @@ nav li {
   list-style: none;
 	font-weight: 500;
 	line-height: 3em;
-  /* padding: .8em; */
 }
 
 
@@ -339,6 +343,11 @@ nav .logo-container {
   /* margin-left: 4vw; */
   font-size: 1.5em;
 	cursor: pointer;
+
+}
+
+.logo-nav{
+	vertical-align: middle;
 }
 
 
@@ -422,7 +431,6 @@ a.logo:hover{
   height: 2px;
   background: var(--background_color);
 	position: relative;
-	top: 2em;
 }
 
 .progress_bar {
@@ -431,6 +439,11 @@ a.logo:hover{
   width: 0%;
 }
 
+.progress_bar_main {
+  height: 2px;
+  background: var(--background_color);
+  width: 0%;
+}
 
 
 
