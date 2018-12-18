@@ -16,7 +16,6 @@ function stickyNav() {
     else if (w <= 768 && banner){
       banner.style.paddingTop =  '4em';
     }
-
     else if (w > 768 && title){
       title.style.paddingTop =  '4em';
     }
@@ -26,9 +25,8 @@ function stickyNav() {
   }
   else {
     navbar.classList.remove("sticky");
-
-
   }
+
 
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -36,7 +34,16 @@ function stickyNav() {
     document.getElementById("scrollInd").style.width = scrolled + "%";
 
 
-  // if(window.pageYOffset = sticky){
-  //   document.getElementByClass("sticky").style.boxShadow = 'none';
-  // }
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0 0";
+    document.getElementById("navbar").style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2)";
+  }
+  else {
+    document.getElementById("navbar").style.padding = "2em 0";
+    document.getElementById("navbar").style.boxShadow  = "none";
+
+  }
+
+
+
 }
