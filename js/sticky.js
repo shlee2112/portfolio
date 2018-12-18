@@ -37,11 +37,12 @@ function stickyNav() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "0 0";
     document.getElementById("navbar").style.boxShadow = "0 4px 8px 0 rgba(0, 0, 0, 0.2)";
+    document.getElementById("logo-nav").style.width = "6vw";
   }
   else {
     document.getElementById("navbar").style.padding = "2em 0";
     document.getElementById("navbar").style.boxShadow  = "none";
-
+    document.getElementById("logo-nav").style.width = "10vw";
   }
 
 

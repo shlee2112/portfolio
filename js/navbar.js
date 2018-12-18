@@ -3,7 +3,7 @@ function replaceLogo() {
     var logo = document.getElementById("logo");
     var ux = document.getElementById("ux");
     if (w <= 992){
-      logoImg = '<a href="index.html"><img src="images/logo.png" alt="Logo" class="logo-nav"></a>';
+      logoImg = '<a href="index.html"><img src="images/logo.png" alt="Logo" id="logo-nav" class="logo-nav"></a>';
       uxAbr = 'UX';
       logo.innerHTML = logoImg;
       ux.innerHTML = uxAbr;
