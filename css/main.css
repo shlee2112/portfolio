@@ -346,8 +346,14 @@ nav .logo-container {
 
 }
 
-.logo-nav{
+#logo-nav{
 	vertical-align: middle;
+	width: 10vw;
+	transition: .5s ease;
+	-webkit-transition: .5s ease;
+	-moz-transition:.5s ease;
+	-o-transition: .5s ease;
+
 }
 
 
@@ -368,7 +374,10 @@ nav .logo-container {
   width: 30px;
   height: 3px;
   background-color: var(--color_black, black);
-  transition: .2s;
+  transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
 }
 
 
@@ -378,10 +387,16 @@ nav .logo-container {
   background-color: var(--color_black, black);
   margin: 5px 0;
   transition: .2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
 }
 
 .active-burger .line1 {
   transform: rotate(-45deg) translate(-6px, 5px);
+	-webkit-transition: rotate(-45deg) translate(-6px, 5px);
+	-moz-transition: rotate(-45deg) translate(-6px, 5px);
+	-o-transition: rotate(-45deg) translate(-6px, 5px);
 }
 
 .active-burger .line2 {
@@ -390,6 +405,9 @@ nav .logo-container {
 
 .active-burger .line3 {
   transform: rotate(45deg) translate(-6px, -5px);
+	-webkit-transition: rotate(-45deg) translate(-6px, 5px);
+	-moz-transition: rotate(-45deg) translate(-6px, 5px);
+	-o-transition: rotate(-45deg) translate(-6px, 5px);
 }
 
 .show-menu-mobile {
@@ -504,6 +522,9 @@ h3.project_title{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
+	-webkit-transition: .5s ease;
+	-moz-transition:.5s ease;
+	-o-transition: .5s ease;
   background-color: var(--color_black, black);
 }
 
