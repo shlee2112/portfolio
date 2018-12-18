@@ -98,6 +98,10 @@ nav > div.container{
     width: 100%;
   }
 
+  .progress_container {
+  	top: 1em;
+  }
+
 
 }
 
