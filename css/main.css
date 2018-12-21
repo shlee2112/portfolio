@@ -176,7 +176,10 @@ i:hover{
 	color: var(--prim_color, blue);
 }
 
-
+::selection{
+	background: var(--prim_color);
+	color: var(--color_white);
+}
 
 
 
