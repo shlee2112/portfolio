@@ -57,6 +57,7 @@ table {
 :root{
 	--prim_color: #156bd7;
 	--background_color: #f8f8f8;
+	--highlight_color: #f8f7b8;
 	--color_black: #000;
 	--color_white: #fff;
 	--color_grey: #333;
@@ -181,7 +182,10 @@ i:hover{
 	color: var(--color_white);
 }
 
-
+mark{
+	background-image: linear-gradient(var(--background_color), var(--highlight_color));
+	/* font-weight: bold; */
+}
 
 
 
