@@ -86,7 +86,8 @@ input{
 	margin: 3em 0 1em 0;
 	text-align: center;
 	font-size: 1em;
-	padding: 1em
+	padding: 1em;
+	font-weight: 200;
 }
 
 
@@ -103,18 +104,41 @@ button {
 	cursor: pointer;
 	border-radius: 3em;
 	font-family: var(--prim_font_fam);
-
 }
+
+span{
+	font-size: 3em;
+}
+
+i{
+	margin-bottom: .25em;
+}
+
+i:hover{
+	color: var(--color_black, black);
+}
+
+footer{
+	margin: 2em 0 0 0;
+	bottom: 0;
+}
+
+.return{
+	text-align: left;
+	margin: 1em;
+}
+
 
 </style>
 
 <body>
 
 	<div id="loginbox" class="lightbox" >
+		<div class="return"><p>Go Back to <a href="index.html">Portfolio</a></p></div>
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
-					<span style="font-size:3em;">
+					<span>
 					<i class="fas fa-lock"></i>
 					</span>
 					<h1>This content is protected.
@@ -124,10 +148,14 @@ button {
 					<input id="password" type="password" placeholder="Enter Your Password" /> <br />
 					<button id="loginbutton" type="button">Enter</button>
 					<p id="wrongPassword" style="display: none">Please Try Again</p>
+					<footer>
+						<p>Designed and Coded by Sanghyun Lee</p>
+					</footer>
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 
 
