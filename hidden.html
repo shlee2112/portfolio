@@ -102,7 +102,7 @@ button {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	margin: 1em 2em;
+	margin: 1em 1em;
 	cursor: pointer;
 	border-radius: 3em;
 	font-family: var(--prim_font_fam);
@@ -121,16 +121,12 @@ i:hover{
 	color: var(--color_black, black);
 }
 
-footer{
-	margin: 2em 0 0 0;
+.link > p{
+	margin: 1em 0 0 0;
 	bottom: 0;
-	font-size: .5em;
+	font-size: .75em;
 }
 
-.return{
-	text-align: left;
-	margin: 1em;
-}
 
 
 </style>
@@ -151,9 +147,9 @@ footer{
 					<input id="password" type="password" placeholder="Please enter your password" /> <br />
 					<button id="loginbutton" type="button">Enter</button>
 					<p id="wrongPassword" style="display: none">Please Try Again</p>
-					<footer>
-						<p>Designed and Coded by Sanghyun Lee</p>
-					</footer>
+					<div class="link">
+							<p><a href="index.html">Sanghyun's Portfolio Website</a></p>
+					</div>
 				</div>
 			</div>
 		</div>
