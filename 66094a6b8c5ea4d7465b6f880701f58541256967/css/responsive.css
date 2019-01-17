@@ -1,0 +1,175 @@
+/*============= Typography =============*/
+
+
+/*---- Mobile Phones (576px+) ---*/
+@media screen and (min-width: 576px){
+
+
+}
+
+
+
+/*--- Tablets (768px+) ---*/
+@media screen and (min-width: 768px){
+
+  html{
+    font-size: 16px;
+  }
+
+}
+
+
+/*--- Desktops (992px+) ---*/
+@media screen and (min-width: 992px){
+
+  html{
+    font-size: 16px;
+  }
+
+}
+
+
+
+
+
+
+/*============= Navigation Bar =============*/
+
+
+@media screen and (min-width: 576px){
+
+
+}
+
+@media screen and (max-width: 768px){
+
+  .container-burger {
+    display: block;
+  }
+
+  nav li.list{
+    flex-direction: column;
+    align-items: flex-start center;
+  }
+
+  nav{
+    padding: 1em 0 !important;
+    /* margin: 0 1.8em; */
+  }
+
+nav > div.container{
+  display: flex;
+  align-items: flex-start;
+}
+
+  .logo_mobile {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo_m{
+    width: 10vw;
+    min-width: 50px;
+  }
+
+  .hidden{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-menu, .right-menu{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+  }
+
+  .left-menu li, .right-menu li{
+    margin: 0;
+  }
+
+  .center-menu{
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  .progress_container {
+  	top: 1em;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+/*============= Contents =============*/
+@media screen and (max-width: 575px){
+
+  /* .col-12:not(figure){
+    padding: 0 7%;
+  } */
+
+  .resume{
+    padding: 0 4%;
+  }
+
+  .pic{
+    padding: 0;
+  }
+
+  .row{
+  	margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/*---- Mobile Phones (576px+) ---*/
+@media screen and (min-width: 576px){
+  section.about{
+  	order: 2;
+  }
+
+  img.avatar{
+  	order: 1;
+  }
+
+
+}
+
+
+
+
+
+
+/*--- Tablets (768px+) ---*/
+@media screen and (min-width: 768px){
+  section.about{
+  	order: 1;
+  }
+
+  img.avatar{
+  	order: 2;
+  }
+
+}
+
+
+
+
+
+/*--- Desktops (992px+) ---*/
+@media screen and (min-width: 992px){
+  nav ul {
+  	margin: 0;
+  }
+}
