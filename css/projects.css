@@ -42,11 +42,36 @@ p.subtitle{
 }
 
 .quote{
-	text-align: center;
-	border-top: 1px solid var(--color_black);
-	border-bottom: 1px solid var(--color_black);
-	padding: 1em 0;
+	border-top: 1px solid var(--color_grey);
+	border-bottom: 1px solid var(--color_grey);
+	padding: 1em 5em;
 	line-height: 4em;
+}
+
+.quote > h3{
+	font-style: italic;
+}
+
+.quote > p{
+	text-align: right;
+	font-style: italic;
+}
+
+.quote_sm{
+	text-align: left;
+	border-top: 1px solid var(--color_grey);
+	border-bottom: 1px solid var(--color_grey);
+	padding: 1em 2em 0 2em;
+	margin: 2em 0;
+}
+
+.quote_sm > p{
+	font-style: italic;
+	font-weight: bold;
+}
+
+.quote_sm > figcaption{
+	text-align: right;
 }
 
 .impact{
