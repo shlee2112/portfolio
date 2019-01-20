@@ -58,6 +58,7 @@ table {
 	--prim_color: #156bd7;
 	--background_color: #f8f8f8;
 	--highlight_color: #f8f7b8;
+	--selection_color: #d2e4fb;
 	--color_black: #000;
 	--color_white: #fff;
 	--color_grey: #333;
@@ -178,8 +179,8 @@ i:hover{
 }
 
 ::selection{
-	background: var(--prim_color);
-	color: var(--color_white);
+	background: var(--selection_color);
+	color: var(--color_black, black);
 }
 
 mark{
