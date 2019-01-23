@@ -59,8 +59,8 @@ p.subtitle{
 
 .quote_sm{
 	text-align: left;
-	border-top: 1px solid var(--color_grey);
-	border-bottom: 1px solid var(--color_grey);
+	border-top: 1px solid var(--color_lightgrey);
+	border-bottom: 1px solid var(--color_lightgrey);
 	padding: 1em 2em 0 2em;
 	margin: 2em 0;
 }
