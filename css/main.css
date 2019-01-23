@@ -61,7 +61,8 @@ table {
 	--selection_color: #d2e4fb;
 	--color_black: #000;
 	--color_white: #fff;
-	--color_grey: #cdcdcd;
+	--color_grey: #303030;
+	--color_lightgrey: #cdcdcd;
 	--font_size: 14px;
 	--prim_font_fam: europa, sans-serif;
 	--sec_font_fam: 'Montserrat';
