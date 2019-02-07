@@ -93,7 +93,7 @@ nav > div.container{
   }
 
   nav ul {
-    display: hidden;
+    visibility: hidden;
     margin: 1em 0;
     width: 100%;
   }
