@@ -63,7 +63,7 @@ table {
 	--color_white: #fff;
 	--color_grey: #303030;
 	--color_lightgrey: #cdcdcd;
-	--font_size: 14px;
+	--font_size: 16px;
 	--prim_font_fam: europa, sans-serif;
 	--sec_font_fam: 'Montserrat';
 	--t_font_fam: filson-pro, sans-serif;
@@ -429,7 +429,7 @@ nav .logo-container {
 	top: 0;
 	z-index: 1;
 	background: var(--background_color);
-	transition-duration: 5s;
+	transition-duration: .3s;
 	opacity: 0.9;
 	width: 100%;
 	height: 100%;
@@ -491,7 +491,9 @@ a.logo:hover{
  font-weight: 600;
 }
 
-
+.banner p.text{
+	font-weight: 300;
+}
 
 
 /*============= Contents =============*/
