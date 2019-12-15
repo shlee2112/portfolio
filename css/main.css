@@ -54,6 +54,7 @@ table {
 /*============= CSS Variables =============*/
 
 
+
 :root{
 	--prim_color: #156bd7;
 	--background_color: #f8f8f8;
@@ -119,6 +120,14 @@ h5{
 	font-size: 1rem;
 	font-weight: 700;
 	font-style: normal;
+}
+
+h6{
+	font-family: var(--prim_font_fam);
+	font-size: .75rem;
+	font-weight: 100;
+	font-style: italic;
+	margin: 1em 0;
 }
 
 figcaption{

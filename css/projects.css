@@ -34,11 +34,15 @@ p{
 
 
 p > strong{
- font-weight: 600;
+	font-weight: 600;
 }
 
 p.subtitle{
 	margin-top: 2em;
+}
+
+h6 > strong{
+	font-weight: 600;
 }
 
 .quote{
