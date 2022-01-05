@@ -8,13 +8,13 @@ function replaceLogo() {
 
     if (w <= 992){
       // replace logo in mobile view
-      logoImg = '<a href="index.html"><img src="images/logo.png" alt="Logo" id="logo-nav" class="logo-nav"></a>';
+      logoImg = '<h5><div class="logo-container" id="logo"><a href="#" class="logo_sm">Sanghyun Lee</a></div></h5>';
       uxAbr = 'UX';
       logo.innerHTML = logoImg;
       ux.innerHTML = uxAbr;
 
       // Add Mobile Nav
-      uxList = '<li><a href="google_internship.html">Google UX Design Internship</a></li><li><a href="docnetwork.html">DocNetwork</a></li><li><a href="ibm_maelstrom.html">IBM Design Maelstrom</a></li><li><a href="family_talk.html">Family Talk</a></li><li><a href="sweetwaters.html">Sweetwaters</a></li><li><a href="borrow_presence.html">Borrow Presence</a></li>';
+      uxList = '<li><a href="heybunny.html">Heybunny</a></li><li><a href="google_internship.html">Google UX Design Internship</a></li><li><a href="docnetwork.html">DocNetwork</a></li><li><a href="ibm_maelstrom.html">IBM Design Maelstrom</a></li>';
       hidden.innerHTML = uxList;
 
 
@@ -35,7 +35,7 @@ function replaceLogo() {
     let nav = document.getElementById("navbar");
 
     let links = nav.getElementsByTagName("a");
-    let uxlinks = ["google_internship.html", "docnetwork.html", "ibm_maelstrom.html", "family_talk.html", "sweetwaters.html", "borrow_presence.html"]
+    let uxlinks = ["heybunny.html", "google_internship.html", "docnetwork.html", "ibm_maelstrom.html"]
     // console.log(links)
 
     for (i = 0; i < links.length; i++){
