@@ -557,6 +557,16 @@ a.logo:hover {
   font-weight: 300;
 }
 
+@media screen and (max-width: 576px) {
+  .banner p {
+    padding-left: 15px;
+  }
+}
+
+
+
+
+
 /*============= Contents =============*/
 
 .container {
