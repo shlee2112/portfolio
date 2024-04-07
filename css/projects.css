@@ -40,6 +40,19 @@ p.subtitle {
   margin-top: 2em;
 }
 
+
+/* p.first{
+  border-top: 1px solid var(--color_lightgrey);
+} */
+
+/* p.info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  border-bottom: 1px solid var(--color_lightgrey);
+  margin-bottom: 0px;
+} */
+
 h6 > strong {
   font-weight: 600;
 }
@@ -96,6 +109,8 @@ h6 > strong {
   height: 10em;
 }
 
+
+
 ul.lists {
   padding-left: 2em;
   list-style-type: disc;
@@ -116,9 +131,7 @@ ol.lists_num > li {
   margin-bottom: 1em;
 }
 
-.text {
-  /* padding: 0 2em 0 2em; */
-}
+
 
 #app_download {
   text-align: center;
