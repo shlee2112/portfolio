@@ -15,7 +15,7 @@ function replaceLogo() {
       ux.innerHTML = uxAbr;
 
       // Add Mobile Nav
-      uxList = '<li><a href="../spotlight.html">Spotlight</a></li><li><a href="../savia_design_system.html">Savia Design System</a></li><a href="../epp.html">E-Path Plus</a></li><li><a href="../heybunny.html">Heybunny</a></li>';
+      uxList = '<li><a href="../spotlight.html">Spotlight</a></li><li><a href="../savia_design_system.html">Savia Design System</a></li><li><a href="../epp.html">E-Path Plus</a></li><li><a href="../heybunny.html">Heybunny</a></li>';
       hidden.innerHTML = uxList;
 
 
