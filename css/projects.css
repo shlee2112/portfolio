@@ -6,19 +6,27 @@ h3 {
   margin: 1em 0;
 }
 
+
 .header {
   /* padding: 0 1em 0 1em; */
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .title > h2 {
   line-height: 1.5em;
 }
 
+
+.header-left{
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
 /*=============Body=============*/
 
 section {
-  margin: 0 0 15em 0;
+  margin: 0 0 25em 0;
 }
 
 @media screen and (max-width: 575px) {
@@ -26,6 +34,8 @@ section {
     margin: 5em 0;
   }
 }
+
+
 
 p {
   margin: 0 0 1em 0;
@@ -36,29 +46,104 @@ p > strong {
   font-weight: 600;
 }
 
-p.subtitle {
-  margin-top: 2em;
+h4.subtitle {
+  /* margin: 2em 0 1em 0; */
+  margin-bottom: 1em;
 }
 
 
-/* p.first{
-  border-top: 1px solid var(--color_lightgrey);
-} */
 
-/* p.info{
+
+.overview_detail_row{
   display: flex;
-  justify-content: space-between;
-  padding: 0.5em;
-  border-bottom: 1px solid var(--color_lightgrey);
-  margin-bottom: 0px;
-} */
+  gap: 1em;
+  /* justify-content: space-between; */
+}
+
+
+.overview_detail_col > p >strong{
+  display: block;
+  width: 140px;
+}
+
+
+.bullet{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.list_item > h4.subtitle{
+  margin-top: 0;
+}
+
+.icon_bullet{
+  margin-right: 8px;
+  margin-bottom: 1em;
+  color: var(--color_black);
+  background-color: var(--color_white);
+  border: 1px solid var(--border_color);
+  padding: .75em;
+  border-radius: 50%;
+}
+
+i.icon_bullet:hover {
+  color: black;
+}
+
+span.list_item{
+  display: flex;
+  align-items: center;
+}
+
 
 h6 > strong {
   font-weight: 600;
 }
 
+
+.highlight{
+  color: var(--prim_color);
+}
+
+
+.item{
+  margin-bottom: 6em;
+}
+
+.item_header{
+  margin-top: 1em;
+}
+
+.img_col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.adjust{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
 .links {
   padding-left: 1em;
+}
+
+.pagelink{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.pagelink > p{
+  margin-bottom: 0;
+}
+
+.pagelink > i{
+  margin-right: 0.25em;
 }
 
 .quote {
@@ -70,6 +155,7 @@ h6 > strong {
 
 .quote > h3 {
   font-style: italic;
+  text-align: center;
 }
 
 .quote > p {
@@ -102,6 +188,7 @@ h6 > strong {
 .content_img {
   width: 100%;
   height: auto;
+  margin-bottom: 3em;
 }
 
 .divider {
@@ -109,6 +196,15 @@ h6 > strong {
   height: 10em;
 }
 
+
+.data{
+  margin:1em 0 2em 0;
+}
+
+
+.data > h1{
+  margin: 0;
+}
 
 
 ul.lists {
@@ -142,6 +238,7 @@ ol.lists_num > li {
 figure.title_image > img {
   padding: 0;
   width: 100%;
+  margin-bottom: 4em;
 }
 
 figure.final_img {
@@ -150,4 +247,8 @@ figure.final_img {
 
 figure > figcaption {
   margin: 0.75em 0 2em 0;
+}
+
+.img_reset{
+  margin-bottom: 0;
 }

@@ -134,12 +134,14 @@ table {
 :root {
   --prim_color: #156bd7;
   --background_color: #f8f8f8;
+  --container_background_color: #f1f1f1;
   --highlight_color: #f8f7b8;
   --selection_color: #d2e4fb;
   --color_black: #000;
   --color_white: #fff;
   --color_grey: #303030;
   --color_lightgrey: #cdcdcd;
+  --border_color: #eeeeee;
   --font_size: 16px;
   --prim_font_fam: europa, sans-serif;
   --sec_font_fam: "Montserrat";
@@ -189,6 +191,7 @@ h4 {
   font-size: 1.333rem;
   font-weight: 600;
   font-style: normal;
+  line-height: 1.5em;
 }
 
 h5 {
