@@ -38,6 +38,7 @@
     <link href="../css/projects.css" rel="stylesheet" type="text/css">
     <link href="../css/responsive.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--==== JS ====-->
     <!--<script src="js/ripple.js"></script>-->
@@ -121,7 +122,7 @@
 
   <main class="container">
     <section class="title" id="title">
-      <h1>E-Path Plus</h1>
+      <h1 class="header">E-Path Plus</h1>
       <h2>Improving Cancer Registry Experiences</h2>
     </section>
 
@@ -130,17 +131,27 @@
       <img src="images/epp/cover.png" alt = "E-Path Plus Cover Image"/>
     </figure>
 
-    <section class="row justify-content-center" id="overview">
-      <h3 class="col-12 col-md-6 header">Overview</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <p>In order to improve usability when analyzing and abstracting cancer patient data, we redesigned the original E-Path Plus, which utilizes NLP capabilities to streamline the cancer registry process.</p>
+    <section class="row justify-content-center " id="overview">
+      <h1 class="col-12 col-lg-4 header-left">Overview</h1>
+      <div class="col-12 col-lg-5">
+        <p class="item_p">In order to improve usability when analyzing and abstracting cancer patient data, we redesigned the original E-Path Plus, which utilizes NLP capabilities to streamline the cancer registry process.</p>
         </p>
-        <br>
-        <p class="info first"><strong>Platform:</strong> Web Application</p>
-        <p class="info"><strong>Year:</strong> 2022 ~ 2023</p>
-        <p class="info"><strong>My Role:</strong> Lead Designer</p>
-
+        <div class="overview_detail_row">
+          <div class="overview_detail_col"><p><strong>Role:</strong></p></div>
+          <div class="overview_detail_col"><p>Lead Designer</p></div>
+        </div>
+        <div class="overview_detail_row">
+          <div class="overview_detail_col"><p><strong>Contribution:</strong></p></div>
+          <div class="overview_detail_col"><p>UX &#x1427; UI &#x1427; Research &#x1427; Prototyping</p></div>
+        </div>
+        <div class="overview_detail_row">
+          <div class="overview_detail_col"><p><strong>Platform:</strong></p></div>
+          <div class="overview_detail_col"><p>Web Application</div>
+        </div>
+        <div class="overview_detail_row">
+          <div class="overview_detail_col"><p><strong>Year:</strong></p></div>
+          <div class="overview_detail_col"><p>2022 ~ 2023</p></div>
+        </div>
       </div>
     </section>
 
@@ -153,86 +164,117 @@
     </section>
 
 
-    <section class="row justify-content-center" id="section">
-      <figure class="col-12 col-md-8">
+    <section class="row justify-content-start" id="section">
+      <div class="col-12 col-lg-5 text">
+        <h1 class="header-left">Background</h1>
+        <p>In the cancer registry industry, registrars play a vital role in the healthcare system by contributing to cancer research. They are responsible for collecting, abstracting and maintaining accurate records of cancer patient data. 
+        </p>
+      <p>E-Path Plus is a cancer registry application that utilizes AI technology to extract discrete information about the disease including cancer site, histologic type, staging information etc.          
+      </p>
+        </div>
+      <figure class="col-12 col-lg-6 offset-lg-1">
         <img src="images/epp/registrar.jpg" class="content_img" alt="Cancer Registrar"/>
       </figure>
-      <h3 class="col-12 col-md-6 header">Background</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <p>In the cancer registry industry, registrars play a vital role in the healthcare system by contributing to cancer research. They are responsible for collecting, abstracting and maintaining accurate records of cancer patient data. 
-          </p>
-        <p>E-Path Plus is a cancer registry application that utilizes AI technology to extract discrete information about the disease including cancer site, histologic type, staging information etc.          
-        </p>
-      </div>
     </section>
 
-    <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header">Problem Scope</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
+
+
+    <section class="row justify-content-start" id="section">
+      <div class="col-12 col-lg-5">
+        <h1 class="header-left">Problem Scope</h1>
         <p>Our design team conducted multiple rounds of interviews with two current users and two original engineers who developed this product. Additionally, we conducted internal design audits to identify opportunities for improving cancer registry experiences. And, we synthesized our findings into three major problems.</p>
       </div>
-      <figure class="col-12 col-md-8">
-        <img src="images/epp/original.png" class="content_img" alt="A Snapshot of Original EPP"/>
-        <figcaption>A snapshot of original E-Path Plus</figcaption>
-      </figure>
-      <div class="col-12 col-md-6 text">
-        <ol class="lists_num" type="1">
-          <li><p class="subtitle"><strong>Excessive steps required for information access or action</strong></p>Users had to drag panels to expand and collapse to reveal patient data. They also had to click multiple times to navigate and take action.</li>
-          <li><p class="subtitle"><strong>Lack of visual cues</strong></p>It was difficult for users to differentiate between discrete data and manually entered text through current visual cues, as well as to identify fields with new information or conflicts from different sources.</li>
-          <li><p class="subtitle"><strong>Lack of information hierarchy</strong></p>Registrars often struggled to find significant pieces of information when reviewing multiple medical documents due to overwhelming information lacking an order of importance.</li>
-        </ol>
-      </div>
-    </section>
-
-
-
-    <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header">Goals</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <p>Based on our analysis and strategy, we decided to completely overhaul the original application, which lacked scalability and relied on outdated visuals.
-        </p>
-      </div>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <ol class="lists_num" type="1">
-          <li><p class="subtitle"><strong><del>Excessive steps required for information access or action</del> &rarr; Layout and content structure rework</strong></p>We redesigned the layout to reduce unnecessary interactions for accessing and navigating the application. Additionally, we updated the content structure to enhance readability and streamline access to necessary information.</li>
-          <li><p class="subtitle"><strong><del>Lack of visual cues</del> &rarr; Clear and consistent visual cues</strong></p>Using the right color codes and visual cues for different data formats, we aid users in distinguishing between extracted and manually inputted information. Moreover, we incorporated clear annotations to provide instant insights.</li>
-          <li><p class="subtitle"><strong><del>Lack of information hierarchy</del> &rarr; Clear visual hierarchy</strong></p>By differentiating content and actionable items from the background, we establish a clear user path amidst overwhelming information and text, enabling users to focus and navigate effectively.</li>
-        </ol>
-      </div>
-    </section>
-
-
-
-
-
-
-
-    <div class="col-12 divider"></div>
-
-
-
-    <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header">Final Deliverables</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <p>The successful launch of the new ILL dashboard, Spotlight, at Intermountain Hospitals not only saved $3 million annually but also positively impacted numerous lives.
-        </p>
-      </div>
-      <div class="w-100"></div>
       <figure class="col-12">
-        <img src="images/epp/final.png" class="content_img" alt="Final Deliverables"/>
+        <img src="images/epp/original.png" class="content_img" alt="A Snapshot of Original EPP"/>
+      </figure>
+      <div class="w-100"></div>
+      <!-- <div class="col-12 col-lg-5"> -->
+        <div class="col-12 col-lg-5 item">
+            <i class="material-icons icon_bullet">quiz</i>
+            <h4 class="subtitle">Excessive steps required for information access or action</h4>
+            <p>Users had to drag panels to expand and collapse to reveal patient data. They also had to click multiple times to navigate and take action.</p>
+        </div>
+        <div class="col-12 col-lg-5 offset-lg-1 item">
+            <i class="material-icons icon_bullet">ads_click</i>
+            <h4 class="subtitle">Lack of visual cues</h4>
+            <p>It was difficult for users to differentiate between discrete data and manually entered text through current visual cues, as well as to identify fields with new information or conflicts from different sources.</p>
+        </div>
+        <div class="col-12 col-lg-5 item">
+            <i class="material-icons icon_bullet">account_tree</i>
+            <h4 class="subtitle">Lack of information hierarchy</h4>
+            <p>Registrars often struggled to find significant pieces of information when reviewing multiple medical documents due to overwhelming information lacking an order of importance.</p>
+        <!-- </div> -->
+      </div>
+    </section>
 
-      </section>
+
+
+
+
+    <section class="row justify-content-start" id="section">
+      <div class="col-12 col-lg-6 item">
+      <h1 class="header">Goals</h1>
+      <p>Based on our analysis and strategy, we decided to completely overhaul the original application, which lacked scalability and relied on outdated visuals.</p>
+    </div>
+      <div class="w-100"></div>
+
+      <div class="row item adjust">
+        <div class="col-12 col-lg-5">
+          <i class="material-icons icon_bullet">layers</i>
+          <h4 class="subtitle">Layout and content structure rework</h4>
+          <p>We redesigned the layout to reduce unnecessary interactions for accessing and navigating the application. Additionally, we updated the content structure to enhance readability and streamline access to necessary information.</p>
+        </div>
+        <figure class="col-12 col-lg-6 offset-lg-1">
+          <img src="images/epp/example_1.png" class="content_img" alt="Layout and content structure rework example"/>
+        </figure>
+      </div>
+
+      <div class="w-100"></div>
+      
+      <div class="row item">
+        <div class="col-12 col-lg-5">
+          <i class="material-icons icon_bullet">ads_click</i>
+          <h4 class="subtitle">Clear and consistent visual cues</h4>
+          <p class="item_p">Using the right color codes and visual cues for different data formats, we aid users in distinguishing between extracted and manually inputted information. Moreover, we incorporated clear annotations to provide instant insights.</p>
+        </div>
+        <figure class="col-12 col-lg-6 offset-lg-1">
+          <img src="images/epp/example_2.png" class="content_img" alt="Clear and consistent visual cues example"/>
+        </figure>
+      </div>
+
+
+      <div class="row item">
+        <div class="col-12 col-lg-5">
+          <i class="material-icons icon_bullet">ads_click</i>
+          <h4 class="subtitle">Clear visual hierarchy</h4>
+          <p class="item_p">By differentiating content and actionable items from the background, we establish a clear user path amidst overwhelming information and text, enabling users to focus and navigate effectively.</p>
+        </div>
+        <figure class="col-12 col-lg-6 offset-lg-1">
+          <img src="images/epp/example_3.png" class="content_img" alt="Clear visual hierarchy example"/>
+        </figure>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="row justify-content-start" id="section">
+      <figure class="col-12">
+        <img src="images/epp/cover.png" class="content_img" alt="Final Deliverables"/>
+      </figure>
+    </section>
+
+
+
+
 
 
 
 
     <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header" style="text-align: center; line-height:2em;">Thank you for your time to go through my journey!</h3>
+      <h3 class="col-12 col-lg-6 header" style="text-align: center; line-height:2em;">Thank you for your time to go through my journey!</h3>
     </section>
 
 

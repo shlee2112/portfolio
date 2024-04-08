@@ -38,6 +38,7 @@
     <link href="../css/projects.css" rel="stylesheet" type="text/css">
     <link href="../css/responsive.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--==== JS ====-->
     <!--<script src="js/ripple.js"></script>-->
@@ -121,7 +122,7 @@
 
   <main class="container">
     <section class="title" id="title">
-      <h1>Spotlight</h1>
+      <h1 class="header">Spotlight</h1>
       <h2>Redesigning Incidental Liver Lesion (ILL) Dashboard</h2>
     </section>
 
@@ -130,17 +131,27 @@
       <img src="images/sp/cover.png" alt = "Spotlight Cover Image"/>
     </figure>
 
-    <section class="row justify-content-center" id="overview">
-      <h3 class="col-12 col-md-6 header">Overview</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <p>The redesign of Spotlight addressed numerous usability challenges stemming from the accumulation of new features. It also served as a pioneering application, establishing and validating a new design language focused on empowering clinicians to efficiently prioritize critical actions.</p>
+    <section class="row justify-content-center " id="overview">
+      <h1 class="col-12 col-lg-4 header-left">Overview</h1>
+      <div class="col-12 col-lg-5">
+        <p class="item_p">The redesign of Spotlight addressed numerous usability challenges stemming from the accumulation of new features. It also served as a pioneering application, establishing and validating a new design language focused on empowering clinicians to efficiently prioritize critical actions.</p>
         </p>
-        
-        <p class="info"><strong>Platform:</strong> Web Application</p>
-        <p class="info"><strong>Year:</strong> 2023 ~ 2024</p>
-        <p class="info"><strong>My Role:</strong> Lead Designer</p>
-
+        <div class="overview_detail_row">
+          <div class="overview_detail_col"><p><strong>Role:</strong></p></div>
+          <div class="overview_detail_col"><p>Lead Designer</p></div>
+        </div>
+        <div class="overview_detail_row">
+          <div class="overview_detail_col"><p><strong>Contribution:</strong></p></div>
+          <div class="overview_detail_col"><p>UX &#x1427; UI &#x1427; Research &#x1427; Prototyping</p></div>
+        </div>
+        <div class="overview_detail_row">
+          <div class="overview_detail_col"><p><strong>Platform:</strong></p></div>
+          <div class="overview_detail_col"><p>Web Application</div>
+        </div>
+        <div class="overview_detail_row">
+          <div class="overview_detail_col"><p><strong>Year:</strong></p></div>
+          <div class="overview_detail_col"><p>2023 ~ 2024</p></div>
+        </div>
       </div>
     </section>
 
@@ -153,61 +164,44 @@
     </section>
 
 
-    <section class="row justify-content-center" id="section">
-      <figure class="col-12 col-md-8">
+    <section class="row justify-content-start" id="section">
+      <div class="col-12 col-lg-5 text">
+        <h1 class="header">Background</h1>
+          <p>At <a href="https://intermountainhealthcare.org/">Intermountain Health</a>, clinicians use an evidence-based dashboard to oversee follow-up care for incidental liver lesions (ILLs) detected on CT scans. This system coordinates imaging, patient communication, and tracking with the aims of minimizing loss to follow-up, facilitating early detection, and showcasing value/return on investment (ROI).
+          </p>
+        </div>
+      <figure class="col-12 col-lg-6 offset-lg-1">
         <img src="images/sp/ihc.png" class="content_img" alt="Intermountain Health Logo"/>
-        <figcaption>Intermountain Health Logo / Source: https://intermountainhealthcare.org/</figcaption>
       </figure>
-      <h3 class="col-12 col-md-6 header">Background</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <p>At Intermountain Health, clinicians use an evidence-based dashboard to oversee follow-up care for incidental liver lesions (ILLs) detected on CT scans. This system coordinates imaging, patient communication, and tracking with the aims of minimizing loss to follow-up, facilitating early detection, and showcasing value/return on investment (ROI).
-        </p>
-      </div>
     </section>
 
-    <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header">Problem Scope</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
+
+
+    <section class="row justify-content-start" id="section">
+      <div class="col-12 col-lg-5">
+        <h1 class="header-left">Problem Scope</h1>
         <p>After conducting multiple rounds of interviews, our team identified 3 major problems:</p>
       </div>
-      <figure class="col-12 col-md-8">
-        <img src="images/sp/oldill.png" class="content_img" alt="A Snapshot of Old Incidental Liver Lesion (ILL) Dashboard"/>
-        <figcaption>A snapshot of the previous Incidental Liver Lesion (ILL) Dashboard</figcaption>
+      <figure class="col-12">
+        <img src="images/sp/oldill.jpg" class="content_img" alt="A Snapshot of Old Incidental Liver Lesion (ILL) Dashboard"/>
       </figure>
-      <div class="col-12 col-md-6 text">
-        <ol class="lists_num" type="1">
-          <li><p class="subtitle"><strong>Information Obscurity</strong></p>The accumulation of new features had obscured essential information and actions, hindering user comprehension and efficiency. Also, the previous dashboard failed to effectively draw users' attention to critical information when needed.</li>
-          <li><p class="subtitle"><strong>Interactive Element Ambiguity</strong></p>The user interface lacked clear differentiation between static text and actionable components, leading to user confusion and the need for trial and error to discern interactive elements.</li>
-          <li><p class="subtitle"><strong>Information Fragmentation & Complex Navigation</strong></p>The insufficient organization and structure of information within the dashboard resulted in users navigating across various columns and undertaking multiple steps to input information, diminishing user efficiency.</li>
-        </ol>
-      </div>
-    </section>
-
-
-
-    <section class="row justify-content-center" id="section">
-      <div class="col-12 quote">
-        <h3>How can we fix the information ambiguity issues within the ILL dashboard?</h3>
-      </div>
-    </section>
-
-
-    <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header">Goals</h3>
       <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <p>We transformed our primary challenges into actionable opportunities to address during the redesign process.
-        </p>
-      </div>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <ol class="lists_num" type="1">
-          <li><p class="subtitle"><strong><del>Information Obscurity</del> &rarr; Create visual hierarchy</strong></p>Organize interface elements in a logical manner that directs users' attention to the most important details first.</li>
-          <li><p class="subtitle"><strong><del>Interactive Element Ambiguity</del> &rarr; Create consistent UIs</strong></p>Craft consistent and predictable interfaces that reinforce intuitive mental models.</li>
-          <li><p class="subtitle"><strong><del>Information Fragmentation & Complex Navigation</del> &rarr; Empower user control</strong></p>Create simple, customizable systems that users can control and modify.</li>
-        </ol>
+      <!-- <div class="col-12 col-lg-5"> -->
+        <div class="col-12 col-lg-5 item">
+            <i class="material-icons icon_bullet">quiz</i>
+            <h4 class="subtitle">Information Obscurity</h4>
+            <p>The accumulation of new features had obscured essential information and actions, hindering user comprehension and efficiency. Also, the previous dashboard failed to effectively draw users' attention to critical information when needed.</p>
+        </div>
+        <div class="col-12 col-lg-5 offset-lg-1 item">
+            <i class="material-icons icon_bullet">ads_click</i>
+            <h4 class="subtitle">Interactive Element Ambiguity</h4>
+            <p>The user interface lacked clear differentiation between static text and actionable components, leading to user confusion and the need for trial and error to discern interactive elements.</p>
+        </div>
+        <div class="col-12 col-lg-5 item">
+            <i class="material-icons icon_bullet">account_tree</i>
+            <h4 class="subtitle">Information Fragmentation & Complex Navigation</h4>
+            <p>The insufficient organization and structure of information within the dashboard resulted in users navigating across various columns and undertaking multiple steps to input information, diminishing user efficiency.</p>
+        <!-- </div> -->
       </div>
     </section>
 
@@ -215,28 +209,84 @@
 
 
 
-
-
-
-    <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header">Design Iterations</h3>
+    <section class="row justify-content-start" id="section">
+      <div class="col-12 col-lg-6 item">
+      <h1 class="header">Goals</h1>
+      <p>We transformed our primary challenges into actionable opportunities to address during the redesign process</p>
+    </div>
       <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
-        <p>Our team underwent extensive iterations and validations in collaboration with the Intermountain ILL team. 
-        </p>
+
+      <div class="row item adjust">
+        <div class="col-12 col-lg-5">
+          <i class="material-icons icon_bullet">layers</i>
+          <h4 class="subtitle">Create visual hierarchy</h4>
+          <p>Organize interface elements in a logical manner that directs users' attention to the most important details first.</p>
+        </div>
+        <figure class="col-12 col-lg-6 offset-lg-1">
+          <img src="images/sp/emphasis_example.png" class="content_img" alt="Emphasis Level Example"/>
+        </figure>
       </div>
+
       <div class="w-100"></div>
-      <figure class="col-12 col-md-6">
+      
+      <div class="row item">
+        <div class="col-12 col-lg-5">
+          <i class="material-icons icon_bullet">ads_click</i>
+          <h4 class="subtitle">Empower user control</h4>
+          <p class="item_p">Create simple, customizable systems that users can control and modify.</p>
+        </div>
+        <figure class="col-12 col-lg-6 offset-lg-1">
+          <img src="images/sp/empower_example_2.png" class="content_img" alt="Empower user control example 2"/>
+        </figure>
+        <figure class="col-12 col-lg-6 offset-lg-6">
+          <img src="images/sp/empower_example_1.png" class="content_img" alt="Empower user control example 1"/>
+        </figure>
+      </div>
+
+      <div class="w-100"></div>
+      <div class="row item">
+        <div class="col-12 col-lg-5">
+          <i class="material-icons icon_bullet">ads_click</i>
+          <h4 class="subtitle">Create consistent UIs</h4>
+          <p>The insights gained from this project significantly shaped the foundation of <a href="../savia_design_system.html" target="_blank">our new design language</a>, fostering a cohesive visual identity across our organization. Additionally, it streamlined the development process for future apps by establishing a shared design language.
+          </p>
+          <span class="pagelink">
+            <i class="material-icons">arrow_forward</i>
+            <p>Check out <a href="../savia_design_system.html" target="_blank">Savia Design System</a></p>
+          </span>
+        </div>
+        <figure class="col-12">
+          <img src="images/sp/designsystem_1.png" class="content_img" alt="Design System Foundation"/>
+        </figure>
+        <figure class="col-12">
+          <img src="images/sp/designsystem_2.png" class="content_img" alt="Design System components"/>
+        </figure>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="row justify-content-start" id="section">
+      <h1 class="col-12 header">Design Iterations</h1>
+      <p class="col-12 col-lg-5">Our team underwent extensive iterations and validations in collaboration with the Intermountain ILL team. 
+      </p> 
+      <figure class="col-12 col-lg-6 offset-lg-1">
         <img src="images/sp/iterations.png" class="content_img" alt="Design Iterations"/>
         <figcaption> </figcaption>
       </figure>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
+      <div class="col-12 col-lg-5 text">
         <p>We meticulously considered various scenarios to ensure seamless user adaptation and efficient utilization of the new designs.
         </p>
       </div>
-      <div class="w-100"></div>
-      <figure class="col-12 col-md-6">
+      <figure class="col-12 col-lg-6 offset-lg-1">
         <img src="images/sp/scenarios.png" class="content_img" alt="Scenario Exploration"/>
       </figure>
     </section>
@@ -244,43 +294,27 @@
 
 
 
-    <div class="col-12 divider"></div>
-
-
-
-    <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header">Final Deliverables</h3>
-      <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
+    <section class="row justify-content-start" id="section">
+      <h1 class="col-12 header-left">Impact</h1>
+      <div class="col-12 col-lg-6 data">
+        <h1>$3M</h1>
+        <p>Annual Saves</p>
         <p>The successful launch of the new ILL dashboard, Spotlight, at Intermountain Hospitals not only saved $3 million annually but also positively impacted numerous lives.
-        </p>
       </div>
       <div class="w-100"></div>
         <div class="col-12 quote">
           <h3>“We just spoke today with a pt who has a new liver cancer diagnosis. He has chronic Hepatitis C, is not cirrhotic, and has never been treated. He was told about the lesion at his ED visit, but has no primary care provider, and without our call, he most likely would never have gotten follow up. We honestly haven't come across too many of these cases, but really feel like we have saved a life with this catch. The lesion is quite big and risk for spreading is certainly a concern the larger they get.”</h3>
           <p>- Liver Transplant Nurse Coordinator at Intermountain Health</p>
         </div>
-      <figure class="col-12">
-        <img src="images/sp/cover.png" class="content_img" alt="Final Deliverables"/>
-        <figcaption>Spotlight: Liver Lesion Dashboard</figcaption>
-      </figure>
-
-      <div class="w-100"></div>
-      <figure class="col-6">
-        <img src="images/sp/ill_final2.png" class="content_img" alt="Final Deliverables"/>
-      </figure>
-      <figure class="col-6">
-        <img src="images/sp/ill_final1.png" class="content_img" alt="Final Deliverables"/>
-      </figure>
       </section>
 
 
 
 
-    <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header">Savia Design System</h3>
+    <!-- <section class="row justify-content-center" id="section">
+      <h3 class="col-12 col-lg-6 header">Savia Design System</h3>
       <div class="w-100"></div>
-      <div class="col-12 col-md-6 text">
+      <div class="col-12 col-lg-6 text">
         <p>The insights gained from this project significantly shaped the foundation of <a href="../savia_design_system.html" target="_blank">our new design language</a>, fostering a cohesive visual identity across our organization. Additionally, it streamlined the development process for future apps by establishing a shared design language.
         </p>
       </div>
@@ -288,13 +322,13 @@
       <figure class="col-12">
         <img src="images/sp/designsystem_cover.png" class="content_img" alt="Savia Design System Cover"/>
       </figure>
-    </section>
+    </section> -->
 
 
 
 
     <section class="row justify-content-center" id="section">
-      <h3 class="col-12 col-md-6 header" style="text-align: center; line-height:2em;">Thank you for your time to go through my journey!</h3>
+      <h3 class="col-12 col-lg-6 header" style="text-align: center; line-height:2em;">Thank you for your time to go through my journey!</h3>
     </section>
 
 
