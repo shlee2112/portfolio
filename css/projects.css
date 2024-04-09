@@ -23,6 +23,11 @@ h3 {
   text-transform: uppercase;
 }
 
+.header-center{
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*=============Body=============*/
 
 section {
@@ -38,6 +43,8 @@ section {
     margin: 5em 0;
   }
 }
+
+
 
 
 
@@ -202,7 +209,10 @@ h6 > strong {
 
 
 .data{
-  margin:2em 0 4em 0;
+  margin:2em 0 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
