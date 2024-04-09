@@ -729,7 +729,7 @@ section.text {
 }
 
 .card_group {
-  background-color: white;
+  background-color: #F1F1F1;
   padding: 5em 2em;
   border-radius: 10px;
 }
