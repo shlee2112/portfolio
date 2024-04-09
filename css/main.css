@@ -397,7 +397,7 @@ nav a {
   background-color: var(--background_color);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
   margin-left: 0px;
 }
@@ -412,7 +412,7 @@ nav a {
   background-color: var(--background_color);
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  /* align-items: center; */
   position: relative;
   margin: 0;
 }
@@ -489,7 +489,6 @@ nav .logo-container {
 .show-menu-mobile {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   position: fixed;
   left: 0;
