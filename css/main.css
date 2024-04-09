@@ -617,6 +617,31 @@ h3.project_title {
   transition: 0.1s ease-in;
 }
 
+.cover_lock{
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 0.1s ease-in;
+}
+
+@media screen and (max-width: 576px) {
+  .cover_lock {
+    opacity: 1;
+  }
+}
+.cover_lock > p{
+  margin: 0;
+  color: var(--color_black, black);
+
+}
+
+.cover_lock > i{
+  margin-right: .25em;
+  font-size: 1em;
+}
+
+
 .cover_title:hover{
   text-decoration: none;
 }
@@ -627,13 +652,18 @@ h3.project_title {
   color: var(--prim_color, blue);
 }
 
+
 .cover_title:hover h2{
   color: var(--prim_color, blue);
 }
 
-
 .cover_title:hover p{
   color: var(--color_black, black);
+}
+
+.cover_title:hover .cover_lock{
+  opacity: 1;
+  color: var(--color_lightgrey);
 }
 
 
