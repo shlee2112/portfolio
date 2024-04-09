@@ -594,15 +594,17 @@ h3.project_title {
 }
 
 
-.cover_title{
+
+ .cover_title{
   display: block;
   color: var(--color_black, black);
-  margin: 2em 0 8em 0;
+  margin-bottom: 8em;
 }
 
 .cover_label{
   display: flex;
   align-items: center;
+  margin-top: 2em;
 }
 
 .cover_label > h2 {
@@ -665,6 +667,13 @@ h3.project_title {
   opacity: 1;
   color: var(--color_lightgrey);
 }
+
+
+
+
+
+
+
 
 
 img.pic {
