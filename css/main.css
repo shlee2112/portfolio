@@ -169,6 +169,7 @@ h1 {
   font-size: 2.369rem;
   font-weight: 700;
   font-style: normal;
+  line-height: 1.5em;
 }
 
 h2 {
@@ -584,11 +585,6 @@ h3.project_title {
   text-align: center;
 }
 
-.cover {
-  position: relative;
-  padding: 0;
-  margin-bottom: 30px;
-}
 
 .thumbnail {
   display: block;
@@ -597,43 +593,49 @@ h3.project_title {
   border-radius: 10px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  background-color: var(--color_black, black);
-  border-radius: 10px;
+
+.cover_title{
+  display: block;
+  color: var(--color_black, black);
+  margin: 2em 0 8em 0;
 }
 
-.overlay h2,
-p {
+.cover_label{
+  display: flex;
+  align-items: center;
+}
+
+.cover_label > h2 {
+  color: var(--color_black, black);
+  font-weight: 900;
   margin: 0;
 }
 
-.cover:hover .overlay {
-  opacity: 0.8;
+.cover_arrow{
+  margin-left: .25em;
+  color: var(--color_lightgrey);
+  transition: 0.1s ease-in;
 }
 
-.overlay p,
-.overlay h2 {
-  color: white;
-  position: relative;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+.cover_title:hover{
+  text-decoration: none;
 }
+
+.cover_title:hover .cover_arrow{
+  transform: translateX(50%);
+  opacity: 1;
+  color: var(--prim_color, blue);
+}
+
+.cover_title:hover h2{
+  color: var(--prim_color, blue);
+}
+
+
+.cover_title:hover p{
+  color: var(--color_black, black);
+}
+
 
 img.pic {
   width: 100%;
