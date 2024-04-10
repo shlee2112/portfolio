@@ -36,6 +36,7 @@ input{
 }
 
 
+
 button {
 	background-color: var(--prim_color, blue);
 	border: none;
@@ -45,7 +46,7 @@ button {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	margin: 1em 1em;
+	margin: 1em 0;
 	cursor: pointer;
     width: 400px;
 	border-radius: 6px;
@@ -55,6 +56,17 @@ button {
 button:hover{
     opacity: 90%;
 }
+
+
+@media screen and (max-width: 460px) {
+	input {
+		width: 300px;
+	}
+	button{
+		width: 300px;
+	}
+  }
+  
 
 span{
 	font-size: 2em;
