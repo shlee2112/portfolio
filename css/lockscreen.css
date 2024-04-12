@@ -36,6 +36,10 @@ input{
 }
 
 
+.header{
+	margin-bottom: 2em;
+}
+
 
 button {
 	background-color: var(--prim_color, blue);
