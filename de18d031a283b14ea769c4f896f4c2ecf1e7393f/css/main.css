@@ -667,6 +667,42 @@ a.logo:hover {
   padding: 0;
 }
 
+.bio_text{
+  margin-bottom: 2em;
+}
+
+.bio{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.bio_num{
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.bio_num > p{
+  margin: 0;
+  color: var(--color_grey);
+  width: 50%;
+  line-height: 100%;
+}
+
+.logo_icons{
+  display: flex;
+  gap: 1em;
+}
+.logo_icons > img{
+  width: 30px;
+}
+
+
+
+
+
+
 h3.project_title {
   font-weight: 600;
   position: relative;
