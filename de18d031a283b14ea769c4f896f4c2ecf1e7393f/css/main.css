@@ -642,6 +642,9 @@ a.logo:hover {
   padding-left: 0;
 }
 
+.banner > div{
+  padding: 0;
+}
 
 .banner p > strong {
   font-weight: 700;
@@ -657,7 +660,9 @@ a.logo:hover {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  margin: 2em 0;
+  margin-top: 3em;
+  border-left: 2px solid var(--color_black);
+  padding: .75em 0 .75em 1.5em;
 }
 
 /* .bio_text{
@@ -673,12 +678,13 @@ a.logo:hover {
 .bio_num{
   display: flex;
   align-items: baseline;
-  gap: .75em;
+  gap: .5em;
 }
 
 .bio_num > p{
   margin: 0;
   color: var(--color_lightgrey);
+  font-size: .75em;
 }
 
 
@@ -699,7 +705,7 @@ a.logo:hover {
 
 @media screen and (max-width: 576px) {
   .banner{
-    padding-left: 15px;
+    padding: 0 15px;
   }
 }
 
