@@ -680,7 +680,7 @@ a.logo:hover {
 .bio_num{
   display: flex;
   align-items: baseline;
-  gap: 1em;
+  gap: .75em;
 }
 
 .bio_num > p{
@@ -694,6 +694,7 @@ a.logo:hover {
   display: flex;
   gap: 1em;
 }
+
 .logo_icons > img{
   width: 30px;
 }
