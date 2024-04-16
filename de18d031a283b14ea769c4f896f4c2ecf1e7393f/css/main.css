@@ -661,7 +661,7 @@ a.logo:hover {
   flex-direction: column;
   gap: 2em;
   margin-top: 3em;
-  border-left: 2px solid var(--color_black);
+  border-left: 2px solid var(--color_grey);
   padding: .75em 0 .75em 1.5em;
 }
 
@@ -743,7 +743,6 @@ h3.project_title {
 
 
 
-
  .cover_title{
   display: block;
   color: var(--color_black, black);
@@ -767,6 +766,7 @@ h3.project_title {
 .tag_group{
   display: flex;
   gap: 1em;
+  margin-top: 2em;
 }
 
 
@@ -775,6 +775,32 @@ h3.project_title {
   padding: .25em 1em;
   background-color: var(--container_background_color);
   border-radius: 30px;
+  margin: 0;
+}
+
+
+
+
+.stat{
+  display: flex;
+  gap: 3em;
+  margin: 3em 0;
+  border-left: 2px solid var(--color_grey);
+  padding: .5em 0 .5em 1em;
+}
+
+.stat > span{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.stat h3{
+  margin: 0;
+  font-weight: 700;
+}
+
+.stat p{
   margin: 0;
 }
 
