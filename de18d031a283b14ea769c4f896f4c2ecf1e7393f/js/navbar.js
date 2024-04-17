@@ -6,10 +6,17 @@ function replaceLogo() {
     var location = window.location.href;
 
 
-    uxList = '<li><a href="index.html">UX</a></li><li style="border: var(--color_lightgrey) 1px solid; width:372px;"></li><li><a href="spotlight.html">Spotlight</a></li><li><a href="savia_design_system.html">Savia Design System</a></li><li><a href="epp.html">E-Path Plus</a></li><li><a href="heybunny.html">Heybunny</a></li>';
+    uxList = '<li><a href="index.html">UX</a></li><li style="border: var(--border_color) 1px solid; width:372px;"></li><li><a href="spotlight.html">Spotlight</a></li><li><a href="savia_design_system.html">Savia Design System</a></li><li><a href="epp.html">E-Path Plus</a></li><li><a href="heybunny.html">Heybunny</a></li>';
 
+
+    uxListMobile = '<li><a href="spotlight.html">Spotlight</a></li><li><a href="savia_design_system.html">Savia Design System</a></li><li><a href="epp.html">E-Path Plus</a></li><li><a href="heybunny.html">Heybunny</a></li>';
+
+    if (w <= 768){
+    hidden.innerHTML = uxListMobile;
+  }
+  else{
     hidden.innerHTML = uxList;
-
+  }
 
     
     if (w <= 992){
