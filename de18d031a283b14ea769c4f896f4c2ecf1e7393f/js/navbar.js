@@ -10,12 +10,14 @@ function replaceLogo() {
 
 
     if (w <= 768){
-    hidden.innerHTML = uxList;
+    hidden.innerHTML = '<li><a href="index.html">UX Home</a></li><li style="border-bottom: var(--color_lightgrey) 1px solid; width:80%;"></li>' + uxList;
     ux.href = "index.html"
+    ux.style.display = "none"
   }
   else{
-    hidden.innerHTML = '<li><a href="index.html">UX</a></li><li style="border: var(--border_color) 1px solid; width:372px;"></li>' + uxList;
+    hidden.innerHTML = '<li><a href="index.html">UX</a></li><li style="border-bottom: var(--border_color) 1px solid; width:372px;"></li>' + uxList;
     ux.href = "#"
+    ux.style.display = "block"
   }
 
     

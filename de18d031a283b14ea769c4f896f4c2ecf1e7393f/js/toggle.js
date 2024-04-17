@@ -11,6 +11,8 @@ var ux_menu = document.getElementById("ux");
 var open_ux_menu = document.getElementById("hidden");
 var close_btn = document.getElementById("menu_close_btn");
 var curtain = document.getElementById("curtain");
+var w = window.outerWidth;
+
 
 
 ux_menu.addEventListener("click", function(){
@@ -33,3 +35,5 @@ curtain.addEventListener("click", function(){
   close_btn.classList.toggle("show_close");
   curtain.classList.toggle("show_curtain");
 });
+
+
