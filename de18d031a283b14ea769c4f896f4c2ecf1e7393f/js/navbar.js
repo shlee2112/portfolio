@@ -11,9 +11,11 @@ function replaceLogo() {
 
     if (w <= 768){
     hidden.innerHTML = uxList;
+    ux.href = "index.html"
   }
   else{
     hidden.innerHTML = '<li><a href="index.html">UX</a></li><li style="border: var(--border_color) 1px solid; width:372px;"></li>' + uxList;
+    ux.href = "#"
   }
 
     
