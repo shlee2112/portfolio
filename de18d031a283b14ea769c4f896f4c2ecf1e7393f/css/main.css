@@ -536,6 +536,10 @@ a.logo:hover {
   font-size: 1.75em;
 }
 
+.hidden > li:not(:first-child) {
+  padding-left: 1em;;
+}
+
 
 
 .show-menu-ux {

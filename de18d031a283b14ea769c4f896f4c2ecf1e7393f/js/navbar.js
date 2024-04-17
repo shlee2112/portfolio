@@ -10,7 +10,7 @@ function replaceLogo() {
 
 
     if (w <= 768){
-    hidden.innerHTML = '<li><a href="index.html">UX Home</a></li><li style="border-bottom: var(--color_lightgrey) 1px solid; width:80%;"></li>' + uxList;
+    hidden.innerHTML = '<li><a href="index.html">UX Home</a></li>' + uxList;
     ux.href = "index.html"
     ux.style.display = "none"
   }
