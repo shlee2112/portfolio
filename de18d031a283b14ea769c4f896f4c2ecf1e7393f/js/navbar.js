@@ -6,7 +6,7 @@ function replaceLogo() {
     var location = window.location.href;
 
 
-    uxList = '<li><a href="spotlight.html">Spotlight</a></li><li><a href="savia_design_system.html">Savia Design System</a></li><li><a href="epp.html">E-Path Plus</a></li><li><a href="heybunny.html">Heybunny</a></li>';
+    uxList = '<li><a href="heybunny.html">Heybunny</a></li><li><a href="spotlight.html">Spotlight</a></li><li><a href="epp.html">E-Path Plus</a></li><li><a href="savia_design_system.html">Savia Design System</a></li>';
 
 
     if (w <= 768){
@@ -47,7 +47,7 @@ function replaceLogo() {
     let nav = document.getElementById("navbar");
 
     let links = nav.getElementsByTagName("a");
-    let uxlinks = ["index.html", "spotlight.html", "savia_design_system.html", "epp.html", "heybunny.html", ]
+    let uxlinks = ["index.html", "heybunny.html", "spotlight.html", "savia_design_system.html", "epp.html", ]
     // console.log(links)
 
     for (i = 0; i < links.length; i++){
