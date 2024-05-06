@@ -135,6 +135,9 @@ table {
   --prim_color: #156bd7;
   --background_color: #f8f8f8;
   --container_background_color: #f1f1f1;
+  --wrapper-bg-black: #170A0A;
+  --wrapper-bg-grey: #F1F1F1;
+  --wrapper-bg-grey: #FFF;
   --highlight_color: #f8f7b8;
   --selection_color: #d2e4fb;
   --color_black: #000;
@@ -176,14 +179,14 @@ h1 {
 h2 {
   font-family: var(--prim_font_fam);
   font-size: 1.777rem;
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
 }
 
 h3 {
   font-family: var(--prim_font_fam);
   font-size: 1.333rem;
-  font-weight: 300;
+  font-weight: 700;
   font-style: normal;
   line-height: 1.5em;
 }
