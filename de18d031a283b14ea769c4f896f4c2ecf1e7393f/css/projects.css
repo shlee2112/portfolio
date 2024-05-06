@@ -57,6 +57,10 @@ h3 {
 }
 
 
+.header_emph_sp{
+  color: var(--project_sp_color);
+}
+
 
 /*=============Body=============*/
 
