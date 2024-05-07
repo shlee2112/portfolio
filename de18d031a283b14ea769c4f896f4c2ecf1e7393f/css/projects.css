@@ -54,11 +54,13 @@ h3 {
 
 .header_emph{
   color: var(--project_hb_color);
+  font-weight: 900;
 }
 
 
 .header_emph_sp{
   color: var(--project_sp_color);
+  font-weight: 900;
 }
 
 
@@ -302,8 +304,14 @@ h6 > strong {
 
 .icon-hb{
   background-color: #FAFAFA;
-  color: #3FC67D;
+  color: var(--project_hb_color);
 }
+
+.icon-sp{
+  background-color: #FAFAFA;
+  color: var(--project_sp_color_container);
+}
+
 
 .card-item-header{
   margin-top: 2em;
@@ -361,6 +369,54 @@ h2.subtitle {
 
 
 
+.sp-findings-card{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color_white);
+  border-radius: 20px;
+  padding: 0.5em 2em 1em;
+  margin: 0 2em 2em 0;
+  border: 1px solid var(--border_color);
+}
+
+.sp-findings-card h2{
+  color: var(--project_sp_color);
+  min-height: 86px;
+}
+
+.sp-findings-card :nth-child(2){
+  min-height: 200px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .sp-findings-card {
+    margin: 0 0 1em 0;
+  }
+  .sp-findings-card h2{
+    min-height: 0px;
+  }
+  .sp-findings-card :nth-child(2){
+    min-height: 0px;
+  }
+
+}
+
+
+
+.quote-indent{
+  /* border-left: 2px solid var(--color_black); */
+  padding: 1em;
+  margin-bottom: 2em;
+  font-style: italic;
+  background-color: var(--background_color);
+  border-radius: 8px;
+}
+
+
+
+
+
 
  /* CARD List--------- */
 
@@ -383,7 +439,9 @@ h2.subtitle {
   align-items: center;
 }
 
-
+.card_container_sp{
+  background-color: var(--project_sp_color_container);
+}
 
 
 .light{
@@ -424,8 +482,17 @@ h2.subtitle {
 
 
 .text-hb{
-  color: #3FC67D;
+  color: var(--project_hb_color);
 }
+
+.text-sp{
+  color: var(--project_sp_color);
+}
+
+.card-sp{
+  background-color: var(--project_sp_color_container);
+}
+
 
 
 @media screen and (max-width: 770px) {
@@ -529,6 +596,7 @@ h2.subtitle {
 }
 
 
+
 .question{
   margin-bottom: 18em;
 
@@ -544,6 +612,8 @@ h2.subtitle {
   width: 100%;
   height: auto;
   margin-bottom: 3em;
+  border-radius:20px;
+
 }
 
 .divider {
