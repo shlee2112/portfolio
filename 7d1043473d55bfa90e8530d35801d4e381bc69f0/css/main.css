@@ -805,7 +805,26 @@ h3.project_title {
   margin: 0;
 }
 
+.tag p{
+  line-height: 100%;
+}
 
+.tag-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .25em;
+  padding: .25em 1em .25em .5em;
+  background-color: var(--container_background_color);
+  border-radius: 30px;
+  margin: 0;
+}
+
+
+.tag-icon i{
+  font-size: 18px;
+  height: 18px;
+}
 
 
 .stat{
