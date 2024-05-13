@@ -15,5 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('section[id]').forEach((section) => {
     observer.observe(section);
   });
+
+  document.querySelectorAll('h2[id]').forEach((h2) => {
+    observer.observe(h2);
+  });
+  
   
 });
