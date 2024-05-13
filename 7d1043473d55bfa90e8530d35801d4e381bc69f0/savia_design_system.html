@@ -136,14 +136,10 @@
       <ol>
         <li><a href="#overview">Overview</a></li>
         <li><a href="#section problem">Problems</a></li>
-        <li><a href="#section principles">Design Principles</a></li>
-        <li><a href="#section approach">Design Approach & Strategy</a></li>
-        <li><a href="#section foundation">Foundations</a></li>
-        <li><a href="#section token">Design Tokens</a></li>
-        <li><a href="#section component">Components</a></li>
-        <li><a href="#section devprocess">Development/Release Process</a></li>
-        <li><a href="#section doc">Documentation/ Handoff Process</a></li>
-        <li><a href="#section audit">UX Audits</a></li>
+        <li><a href="#section goal">Goal</a></li>
+        <li><a href="#section approach">Direction & Approach</a></li>
+        <li><a href="#section develop">Develop</a></li>
+        <li><a href="#section deliver">Deliver</a></li>
         <li><a href="#section impact">Impact</a></li>
 
       </ol>
@@ -153,8 +149,8 @@
 
 
     <section class="title" id="title">
-      <h1 class="header">Savia Design System</h1>
-      <h2>A new design language for crafting clinically focused experiences</h2>
+      <!-- <h1 class="header">Savia Design System</h1>
+      <h2>A new design language for crafting clinically focused experiences</h2> -->
     </section>
 
 
@@ -162,16 +158,19 @@
       <img src="images/ds/cover.png" alt = "Savia Design System Cover Image"/>
     </figure>
 
-    <section class="row justify-content-center overview" id="overview">
-      <h1 class="col-12 col-lg-4 header-left">Overview</h1>
-      <div class="col-12 col-lg-5">
-        <p class="item_p">In the demanding hospital setting, clinicians frequently navigate vital patient and clinical data. After analyzing our existing design assets, we concluded it was very inflexible and lacked a clear visual hierarchy. This ended up impeding the user's ability to access critical information efficiently.</p>
-        <p>As a result, I led the design team in developing a revolutionary design language tailored to empower clinicians, enabling seamless focus on crucial tasks and driving goal attainment. This involved defining foundational principles, establishing design tokens, and curating a library of reusable assets, fostering a unified and adaptable design approach.</p>
-        </p>
-        <div class="space"></div>
+
+
+
+    <section class="row justify-content-start overview" id="overview">
+      <h1 class="col-12 col-lg-8">A new design language for <span class="header_emph_sp">crafting clinically focused experiences</span></h1>
+      <div class="col-12 col-lg-9 tag_wrapper">
+        <p class="tag">Design System</p>
+        <p class="tag">UI</p>
+      </div>
+      <div class="col-12 col-lg-6 overview_detail">
         <div class="overview_detail_row">
           <div class="overview_detail_col"><p><strong>Role:</strong></p></div>
-          <div class="overview_detail_col"><p>Lead Designer</p></div>
+          <div class="overview_detail_col"><p>Lead Product Designer</p></div>
         </div>
         <div class="overview_detail_row">
           <div class="overview_detail_col"><p><strong>Contribution:</strong></p></div>
@@ -181,32 +180,47 @@
           <div class="overview_detail_col"><p><strong>Year:</strong></p></div>
           <div class="overview_detail_col"><p>2023 ~ 2024</p></div>
         </div>
+
+
       </div>
-    </section>
+      <div class="w-100"></div>
+      <div class="space"></div>
+    <div class="col-12 col-lg-6 offset-lg-6">
+      <p class="item_p">In the demanding hospital setting, clinicians frequently navigate vital patient and clinical data. After analyzing our existing design assets, we concluded it was very inflexible and lacked a clear visual hierarchy. This ended up impeding the user's ability to access critical information efficiently.</p>
+      <p>As a result, I led the design team in developing a revolutionary design language tailored to empower clinicians, enabling seamless focus on crucial tasks and driving goal attainment. This involved defining foundational principles, establishing design tokens, and curating a library of reusable assets, fostering a unified and adaptable design approach.</p>
+    </div>
+
+  </section>
+
+
+
 
 
 
 
 
     <section class="row justify-content-start" id="section problem">
-      <h1 class="col-12 header-left">Problems</h1>
+      <div class="col-12">
+        <div class="header-border"></div>
+        <h1 class="header-left">Problems</h1>
+     </div>  
       <div class="col-12 col-lg-5">
         <p class="item">Without a centralized collection of reusable components and guidelines, our products faced numerous issues. Therefore, I began shaping the future of our own design system to address the problems we identified.</p>
         <div class="item">
           <i class="material-icons icon_bullet">question_answer</i>
-          <h4 class="subtitle">Inconsistent visual communication</h4>
-          <p>The same or similar information was visually expressed differently in various applications due to the absence of standards. This inconsistency hindered a cohesive user experience across products.</p>
+          <h4 class="subtitle">Inconsistent Visual Communication and Functionality</h4>
+          <p>Our applications displayed similar information differently because there were no visual standards. This inconsistency disrupted the user experience, making it hard for users to stay focused and complete tasks.</p>
         </div>
         <div class="w-100"></div>
         <div class="item">
             <i class="material-icons icon_bullet">ads_click</i>
-            <h4 class="subtitle">Unpredictable interactions and behaviors across all products</h4>
-            <p>Because of inconsistent component behaviors, users often found it challenging to maintain focus and complete their tasks.</p>
+            <h4 class="subtitle">Misalignment with Intensive Hospital Settings</h4>
+            <p>Our research revealed that our user interfaces are not well-suited for intensive hospital environments. Clinicians, who frequently need to access vital patient and clinical data, find it challenging to concentrate on crucial tasks and information amidst the hectic surroundings of such settings.</p>
         </div>
         <div class="item">
             <i class="material-icons icon_bullet">color_lens</i>
-            <h4 class="subtitle">Missing key visual elements that define brand identity</h4>
-            <p>Despite having a suite of products, each product looked as if it were designed by a different company.</p>
+            <h4 class="subtitle">Lack of Key Visual Elements Defining Brand Identity</h4>
+            <p>Despite offering a suite of products, there was a notable lack of consistent visual elements to unify the brand identity. Each product appeared as if it were designed by a different company, undermining the cohesive presence of our brand across various platforms.</p>
         </div>
       </div>
       <figure class="col-12 col-lg-6 offset-lg-1">
@@ -216,132 +230,106 @@
 
 
 
-    <section class="row justify-content-start" id="section principles">
-        <h1 class="col-12 header-left">Design Principles</h1>
-        <p class="col-12 col-lg-5">By leveraging insights gained from our research and iterative design processes, we successfully formulated our unique set of design principles, serving as guiding beacons for our design language.</p>
-
-        <div class="col-12 col-lg-6 offset-lg-1 item">
-          <span class="list_item">
-            <i class="material-icons icon_bullet">layers</i>
-            <h4 class="subtitle">Design <span class="highlight">with hierarchy</span></h4>
-          </span>
-          <span class="list_item">
-            <i class="material-icons icon_bullet">cached</i>
-            <h4 class="subtitle">Design <span class="highlight">with predictability and consistency</span></h4>
-          </span>
-          <span class="list_item">
-            <i class="material-icons icon_bullet">ads_click</i>
-            <h4 class="subtitle">Design <span class="highlight">for user empowerment</span></h4>
-          </span>
-          <span class="list_item">
-            <i class="material-icons icon_bullet">fork_right</i>
-            <h4 class="subtitle">Design <span class="highlight">for flexibility</span></h4>
-          </span>
-          <span class="list_item">
-            <i class="material-icons icon_bullet">thumb_up</i>
-            <h4 class="subtitle">Design <span class="highlight">with trust</span></h4>
-          </span>
-          <span class="list_item">
-            <i class="material-icons icon_bullet">emoji_events</i>
-            <h4 class="subtitle">Design <span class="highlight">with reward</span></h4>
-          </span>
-
-        </div>
-    </section>
 
 
 
 
 
-    <section class="row justify-content-start" id="section approach">
-      <div class="col-12 col-lg-5">
-        <h1 class="header-left">Design Approach & Strategy</h1>
-        <p>To ensure interface elements are logically organized, directing users' attention to critical details first, I established four emphasis level rules</p>
-      </div>
-      <figure class="col-12">
-        <img src="images/ds/emphasis_level.png" class="content_img" alt="Emphasis Level"/>
-      </figure>
-      <div class="w-100"></div>
-          <p class="col-12 col-lg-5 item">Through the strategic assignment of colors to each level, we achieved consistent and predictable interfaces.
-          </p>
-        <div class="col-12 col-lg-6 offset-lg-1 img_col">
-          <figure>
-            <img src="images/ds/example_1.png" class="content_img img_reset" alt="Emphasis Level Before"/>
-          </figure>
-          <i class="material-icons">arrow_downward</i>
-          <figure>
-            <img src="images/ds/example_2.png" class="content_img" alt="Emphasis Level After"/>
-          </figure>
-        </div>
-    </section>
 
-
-
-
-
-    <section class="row justify-content-start" id="section foundation">
-      <div class="col-12 col-lg-6">
-      <h1 class="header">Foundations</h1>
-      <p>Building upon the concept, I developed comprehensive guidelines for foundational elements including color, typography, spacing, motion, and more.</p>
+  <section class="row justify-content-start bg-wrapper bg-white" id="section goal">
+    <div class="col-12">
+      <div class="header-border"></div>
+      <h1 class="header-left">Goal</h1>
+   </div>  
+    <div class="question col-12">
+      <h1>Create a unified and intuitive user interface across all products that enhances <br><span class="header_emph_sp">consistency</span>, <span class="header_emph_sp">supports efficiency in high-intensity environments</span>, and <span class="header_emph_sp">strengthens brand identity</span></h1>
     </div>
-      <div class="w-100"></div>
-      <figure class="col-12">
-        <img src="images/ds/foundations.png" class="content_img" alt="Foundation Example"/>
+</section>
+
+
+
+
+
+<section class="row justify-content-start" id="section approach">
+  <div class="col-12 col-lg-5 item">
+    <div class="header-border"></div>
+    <h1 class="header-left">Direction & Approach</h1>
+ </div>
+ <div class="w-100"></div>
+ <div class="col-12 extra_space"></div>
+
+
+  <h2 class="col-12 col-lg-6">Design Principles</h2>   
+  <div class="w-100"></div>
+  <p class="col-12 col-lg-5">By leveraging insights gained from our research and iterative design processes, we successfully formulated our unique set of design principles, serving as guiding beacons for our design language.</p>
+  <div class="col-12 col-lg-6 offset-lg-1 item">
+    <span class="list_item">
+      <i class="material-icons icon_bullet">layers</i>
+      <h4 class="subtitle">Design <span class="highlight">with hierarchy</span></h4>
+    </span>
+    <span class="list_item">
+      <i class="material-icons icon_bullet">cached</i>
+      <h4 class="subtitle">Design <span class="highlight">with predictability and consistency</span></h4>
+    </span>
+    <span class="list_item">
+      <i class="material-icons icon_bullet">ads_click</i>
+      <h4 class="subtitle">Design <span class="highlight">for user empowerment</span></h4>
+    </span>
+    <span class="list_item">
+      <i class="material-icons icon_bullet">fork_right</i>
+      <h4 class="subtitle">Design <span class="highlight">for flexibility</span></h4>
+    </span>
+    <span class="list_item">
+      <i class="material-icons icon_bullet">thumb_up</i>
+      <h4 class="subtitle">Design <span class="highlight">with trust</span></h4>
+    </span>
+    <span class="list_item">
+      <i class="material-icons icon_bullet">emoji_events</i>
+      <h4 class="subtitle">Design <span class="highlight">with reward</span></h4>
+    </span>
+
+  </div>
+
+  <div class="col-12 extra_space"></div>
+
+
+
+  <div class="col-12 col-lg-5">
+    <h2 class="header-left">Design Approach & Strategy</h2>
+    <p>To ensure interface elements are logically organized, directing users' attention to critical details first, I established four emphasis level rules</p>
+  </div>
+  <figure class="col-12">
+    <img src="images/ds/emphasis_level.png" class="content_img" alt="Emphasis Level"/>
+  </figure>
+  <div class="w-100"></div>
+      <p class="col-12 col-lg-5 item">Through the strategic assignment of colors to each level, we achieved consistent and predictable interfaces.
+      </p>
+    <div class="col-12 col-lg-6 offset-lg-1 img_col">
+      <figure>
+        <img src="images/ds/example_1.png" class="content_img img_reset" alt="Emphasis Level Before"/>
       </figure>
-    </section>
-
-
-
-
-
-
-
-
-
-
-    <section class="row justify-content-start" id="section token">
-      <div class="col-12 col-lg-6">
-      <h1 class="header">Design Tokens</h1>
-      <p>I utilized foundational elements to establish design tokens, serving as the fundamental building blocks for all UI elements. Through the creation of global, semantic, and component tokens, I meticulously managed the consistency and scalability of the UI.</p>
+      <i class="material-icons">arrow_downward</i>
+      <figure>
+        <img src="images/ds/example_2.png" class="content_img" alt="Emphasis Level After"/>
+      </figure>
     </div>
-      <div class="w-100"></div>
-      <figure class="col-12">
-        <img src="images/ds/tokens.png" class="content_img" alt="Design Token Example"/>
-      </figure>
-    </section>
+
+
+    <div class="col-12 extra_space"></div>
+
+
+ <div class="col-12 col-lg-6">
+  <h2 class="header">Design Tokens</h2>
+  <p>I utilized foundational elements to establish design tokens, serving as the fundamental building blocks for all UI elements. Through the creation of global, semantic, and component tokens, I meticulously managed the consistency and scalability of the UI.</p>
+</div>
+  <div class="w-100"></div>
+  <figure class="col-12">
+    <img src="images/ds/tokens.png" class="content_img" alt="Design Token Example"/>
+  </figure>
 
 
 
-
-
-
-
-    <section class="row justify-content-start" id="section component">
-      <div class="col-12 col-lg-6">
-      <h1 class="header">Components</h1>
-      <p>Utilizing our unique design principles and foundational elements, I iteratively developed components designed to empower our users.</p>
-    </div>
-      <figure class="col-12">
-        <img src="images/ds/components.png" class="content_img" alt="Component Examples"/>
-      </figure>
-    </section>
-
-
-
-
-
-
-
-    <section class="row justify-content-start" id="section devprocess">
-      <div class="col-12 col-lg-6">
-      <h1 class="header">Development/Release Process</h1>
-      <p>In order to establish a sustainable system, I proposed a development and release process collaboration between the development team and the design team. To ensure components are built according to the correct specifications and without any functional issues, we established separate environments for UI auditing and functional testing.</p>
-    </div>
-      <div class="w-100"></div>
-      <figure class="col-12">
-        <img src="images/ds/designsystem_process.png" class="content_img" alt="Component Development Process"/>
-      </figure>
-    </section>
+</section>
 
 
 
@@ -350,36 +338,54 @@
 
 
 
-    <section class="row justify-content-start" id="section doc">
-      <div class="col-12 col-lg-6">
-      <h1 class="header">Documentation/Handoff Process</h1>
-      <p>Prior to finalizing the asset handoff, I thoroughly document the full specifications of each component, including structure, styles, and animations, to better communicate with the dev team. Also, I maintain a detailed changelog to track the progression of changes over time.</p>
-    </div>
-      <div class="w-100"></div>
-      <figure class="col-12">
-        <img src="images/ds/spec_1.png" class="content_img" alt="Spec Example 1"/>
-      </figure>
-      <figure class="col-12">
-        <img src="images/ds/spec_2.png" class="content_img" alt="Spec Example 2"/>
-      </figure>
-      <figure class="col-12">
-        <img src="images/ds/spec_3.png" class="content_img" alt="Spec Example 3"/>
-      </figure>
-      <figure class="col-12">
-        <img src="images/ds/spec_4.png" class="content_img" alt="Spec Example 4"/>
-      </figure>
-    </section>
 
 
 
+<section class="row justify-content-start" id="section develop">
+  <div class="col-12 col-lg-5 item">
+    <div class="header-border"></div>
+    <h1 class="header-left">Develop</h1>
+ </div>
+ <div class="w-100"></div>
+ <div class="col-12 extra_space"></div>
+
+
+ <div class="col-12 col-lg-6">
+  <h2 class="header">Development/Release Process</h2>
+  <p>In order to establish a sustainable system, I proposed a development and release process collaboration between the development team and the design team. To ensure components are built according to the correct specifications and without any functional issues, we established separate environments for UI auditing and functional testing.</p>
+</div>
+  <div class="w-100"></div>
+  <figure class="col-12">
+    <img src="images/ds/designsystem_process.png" class="content_img" alt="Component Development Process"/>
+  </figure>
+
+  <div class="col-12 extra_space"></div>
 
 
 
+  <div class="col-12 col-lg-6">
+    <h2 class="header">Documentation/Handoff Process</h2>
+    <p>Prior to finalizing the asset handoff, I thoroughly document the full specifications of each component, including structure, styles, and animations, to better communicate with the dev team. Also, I maintain a detailed changelog to track the progression of changes over time.</p>
+  </div>
+    <div class="w-100"></div>
+    <figure class="col-12">
+      <img src="images/ds/spec_1.png" class="content_img" alt="Spec Example 1"/>
+    </figure>
+    <figure class="col-12">
+      <img src="images/ds/spec_2.png" class="content_img" alt="Spec Example 2"/>
+    </figure>
+    <figure class="col-12">
+      <img src="images/ds/spec_3.png" class="content_img" alt="Spec Example 3"/>
+    </figure>
+    <figure class="col-12">
+      <img src="images/ds/spec_4.png" class="content_img" alt="Spec Example 4"/>
+    </figure>
+
+    <div class="col-12 extra_space"></div>
 
 
-    <section class="row justify-content-start" id="section audit">
-      <div class="col-12 col-lg-6">
-      <h1 class="header">UX Audits</h1>
+    <div class="col-12 col-lg-6">
+      <h2 class="header">UX Audits</h2>
       <p>Before releasing a new version, we conducted a thorough UX audit to ensure that all components were built correctly in a test environment.</p>
     </div>
       <div class="w-100"></div>
@@ -390,7 +396,69 @@
       <figure class="col-12">
         <img src="images/ds/ux_audit_btn.png" class="content_img" alt="UX Audits -"/>
       </figure>
-    </section>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="row justify-content-start bg-wrapper bg-white" id="section deliver">
+  <div class="col-12 col-lg-5 item">
+    <div class="header-border"></div>
+    <h1 class="header-left">Deliver</h1>
+ </div>
+ <div class="w-100"></div>
+ <div class="col-12 extra_space"></div>
+
+
+
+
+ <div class="col-12 col-lg-6">
+  <h2 class="header">Foundations</h2>
+  <p>Building upon the concept, I developed comprehensive guidelines for foundational elements including color, typography, spacing, motion, and more.</p>
+</div>
+  <div class="w-100"></div>
+  <figure class="col-12">
+    <img src="images/ds/foundations.png" class="content_img" alt="Foundation Example"/>
+  </figure>
+
+
+
+
+  <div class="col-12 extra_space"></div>
+
+
+
+  <div class="col-12 col-lg-6">
+    <h2 class="header">Components</h2>
+    <p>Utilizing our unique design principles and foundational elements, I iteratively developed components designed to empower our users.</p>
+  </div>
+    <figure class="col-12">
+      <img src="images/ds/components.png" class="content_img" alt="Component Examples"/>
+    </figure>
+
+
+</section>
+
+
+
+
+
+
+
+
+
 
 
 
