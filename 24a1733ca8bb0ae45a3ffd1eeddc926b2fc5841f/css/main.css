@@ -171,6 +171,8 @@ html {
   font-family: var(--sec_font_fam);
   font-weight: 400;
   font-size: var(--font_size, 14px);
+  scroll-behavior: smooth;
+
 }
 
 h1 {

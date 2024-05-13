@@ -64,6 +64,56 @@ h3 {
 }
 
 
+
+
+/*=============Side Nav=============*/
+.sidenav{
+  position: fixed;
+  width: 160px;
+  top: 300px;
+  right: 1em;
+  align-self: start;
+  margin: 0;
+  padding-left: 1em;
+  border-left: 1px solid var(--border_color);
+  background-color: transparent;
+  z-index: 1;
+}
+
+.sidenav ol{
+  display: flex;
+  flex-direction: column;
+  gap: .75em;
+}
+
+.sidenav li > a{
+  color: var(--color_lightgrey);
+  font-weight: 300;
+  font-size: 0.875em;
+}
+
+.sidenav li.hover > a:hover{
+  color: var(--prim_color);
+}
+
+.sidenav li.active > a {
+  color: var(--prim_color);
+  font-weight: 700;
+}
+
+
+.sidenav ol li{
+line-height: 120%;
+}
+
+@media screen and (max-width: 1560px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+
+
 /*=============Body=============*/
 
 
