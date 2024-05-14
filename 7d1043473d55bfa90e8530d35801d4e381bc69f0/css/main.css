@@ -977,6 +977,17 @@ section.text {
 
 
 
+.ai_emph{
+  /* background: linear-gradient(to right, #1D1CE5, #4649FF,#7978FF, #C47AFF); */
+  /* background: linear-gradient(to right, #0E21A0, #4D2DB7,#9D44C0, #EC53B0); */
+  /* background: linear-gradient(to right, #4700D8, #9900F0, #F900BF, #FF85B3); */
+  background: linear-gradient(to right, #156BD7, #3892FF, #A341F3, #EF3EFF);
+
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+
 /*=============Footer=============*/
 
 footer {
