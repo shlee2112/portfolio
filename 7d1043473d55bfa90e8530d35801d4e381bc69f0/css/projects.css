@@ -766,10 +766,14 @@ figure > figcaption {
 }
 
 
+.video-container{
+  overflow: hidden;
+  /* height: 678px; */
+}
 
-
-
-
+.video-container > video{
+  margin-top: -2px;
+}
 
 
 /*=============Heybunny-Specific=============*/
