@@ -293,6 +293,12 @@ mark {
   /* font-weight: bold; */
 }
 
+
+video{
+  object-fit: cover;
+}
+
+
 /*=============Preloader=============*/
 .no-js #loader {
   display: none;
@@ -1198,7 +1204,9 @@ video.trim{
 
 
 
-
+.ai_sandbox_title{
+  font-size: 1.6em;
+}
 
 
 
@@ -1224,6 +1232,22 @@ video.mobile_vert{
   margin-top: 2em;
 }
 
+
+
+.project_img_container{
+  display: none;
+  border-radius: 28px;
+  width: 100%;
+  margin-top: 4em;
+}
+
+.project_img_container > img{
+  width: 100%;
+}
+
+
+
+
 @media screen and (max-width: 992px) {
 
   .video_mobile{
@@ -1235,7 +1259,28 @@ video.mobile_vert{
   .project-card{
     display: block;
   }
+
+  .project_img_container{
+    display: block;
+
+  }
+
+
 }
+
+
+
+
+
+
+
+/* 
+.ai_sandbox_cover{
+  position: absolute;
+  top: 300px;
+} */
+
+
 
 
 
