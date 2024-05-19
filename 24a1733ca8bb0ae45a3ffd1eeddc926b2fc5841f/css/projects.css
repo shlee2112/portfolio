@@ -325,6 +325,22 @@ h6 > strong {
 
 
 
+
+
+
+video{
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+
+video.trim{
+  clip-path: inset(2px 2px);
+}
+
+
+
+
  /* CARD --------- */
 
 .card-wrapper{
